@@ -7,12 +7,12 @@ client.on('ready', () => {
 });
  
 
-var PrEfix = "-";
+var PrEfix = "A";
 client.on('message', message => {
   if (!message.content.startsWith(PrEfix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== '426744069163843584') return;
+  if (message.author.id !== '505811134528356352') return;
 if (message.content.startsWith(PrEfix + 'wt')) {
 client.user.setActivity(argresult, {type:'WATCHING'});
     message.channel.sendMessage(`**✅  : ${argresult}**`)
